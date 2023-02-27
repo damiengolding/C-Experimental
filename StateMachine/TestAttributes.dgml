@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="192.168.0.*" Bounds="-287.813333333333,-190.133333333333,116.763333333333,28.7333333333333" UseManualLocation="True" />
+    <Node Id="192.168.0.52" Bounds="-370.689979553223,-42.7333333333333,125.56,28.7333333333333" UseManualLocation="True" />
+    <Node Id="192.168.0.95" Bounds="-167.819160461426,-38.8833333333333,125.56,28.7333333333333" UseManualLocation="True" />
+    <Node Id="192.168.1.*" Bounds="-607.329998881022,-163.2,116.763333333333,28.7333333333333" UseManualLocation="True" />
+    <Node Id="192.168.1.26" Bounds="-762.588331654867,-48.2,125.56,28.7333333333333" UseManualLocation="True" />
+    <Node Id="192.168.1086" Bounds="-553.819160461426,-39.5,125.56,28.7333333333333" UseManualLocation="True" />
+    <Node Id="AttackMachine" Bounds="-418,-281,143.153333333333,28.7333333333333" Label="Attack machine" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="192.168.0.*" Target="192.168.0.52" Bounds="-296.031285698718,-161.39999593099,58.9505463574387,110.722466067745" />
+    <Link Source="192.168.0.*" Target="192.168.0.95" Bounds="-217.616102610171,-161.39999593099,95.0445561469701,115.565541446821" />
+    <Link Source="192.168.1.*" Target="192.168.1.26" Bounds="-673.804225216668,-134.466669209798,106.009350742881,80.8105084674905" />
+    <Link Source="192.168.1.*" Target="192.168.1086" Bounds="-542.222665082452,-134.466669209798,40.642032440035,86.8156330373264" />
+    <Link Source="AttackMachine" Target="192.168.0.*" Bounds="-327.92612331099,-252.266664632161,72.8893366555741,56.6126693403008" />
+    <Link Source="AttackMachine" Target="192.168.1.*" Bounds="-516.469057088578,-252.266664632161,145.346152273612,84.5415586643325" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

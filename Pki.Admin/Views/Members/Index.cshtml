@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	ViewData["Title"] = "Members";
+}
+@model IEnumerable<MemberModel>
+
+<h1>Golding's Gym PKI - Membership</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model  => model.Id)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model  => model.LastName)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model  => model.FirstName)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model  => model.IsActive)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var member in Model!)
+		{
+			<tr>
+				<td>@Html.DisplayFor(modelItem => member.Id)</td>
+				<td>@Html.DisplayFor(modelItem => member.LastName)</td>
+				<td>@Html.DisplayFor(modelItem => member.FirstName)</td>
+				<td>@Html.DisplayFor(modelItem => member.IsActive)</td>
+			</tr>
+		}
+	</tbody>
+</table> 
